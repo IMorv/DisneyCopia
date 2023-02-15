@@ -1,5 +1,5 @@
-import { getHomeContent } from "./service/getHomeContent.js";
-import Home from "./pages/home.js";
+import { getHomeContent } from "/service/getHomeContent.js";
+import Home from "/pages/home.js";
 
 getHomeContent()
     .then((data) => {
