@@ -1,0 +1,89 @@
+
+
+.nav-menu {
+    margin-left: 3.7rem;
+}
+
+.nav-menu_item {
+    display: inline;
+    vertical-align: top;
+}
+
+.nav-menu_link,
+.nav-submenu_link {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.nav-menu_link {
+    padding: 3rem 2rem;
+}
+
+.nav-submenu_link{
+    padding: 1.6rem 1.5rem;
+}
+
+.nav-menu_text {
+    margin-left: 1.1rem;
+    position: relative;
+}
+
+.nav-menu_text::before ,
+.nav-submenu_text::before {
+    background: #fff;
+    bottom: -.8rem;
+    content: '';
+    height: 2px;
+    position: absolute;
+    transition: width .3s;
+    width: 0;
+}
+
+.nav-menu_link:hover .nav-menu_text::before,
+.nav-submenu_link:hover .nav-submenu_text::before {
+    width: 100%;
+}
+
+.nav-menu_item.dropdown {
+    display: none;
+}
+
+.nav-menu_item.dropdown:hover .nav-submenu {
+    display: block;
+}
+.nav-submenu{
+    animation: showFade .5s;
+    background: #141414;
+    border: .1rem solid #393939;
+    border-radius: .5rem;
+    display: none;
+    padding: 0.4rem 0;
+    position: relative;
+    top: -2rem;
+}
+
+.nav-submenu_text {
+    margin-left: .7rem;
+    position: relative;
+
+}
+
+@media screen and (max-width: 1050px) {
+    .nav-menu{
+        padding-bottom: 1rem;
+    }
+
+    .nav-menu_item.mobile-hidden, .nav-menu_text {
+        display: none;
+    }
+    .nav-menu_item.dropdown{
+        display: inline-block;
+    }
+    .nav-menu_link{
+        font-size: 1.6rem;
+        padding: 2.8rem 1.6rem;
+    }
+}
