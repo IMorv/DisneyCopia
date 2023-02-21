@@ -1,11 +1,11 @@
-import UserProfile from '/components/user-profile.js'
-import BannerSliderItem from '/components/banner-slider-item.js'
-import ControlSliderItem from '/components/control-slider-item.js'
-import Collection from '/components/collection.js'
-import MovieCarouselItem from '/components/movie-carousel-item.js'
-import bannerSliderModule from '/modules/banner-slides.js'
-import collectionModule from '/modules/collections.js'
-import headerModule from '/modules/header.js'
+import UserProfile from '../components/user-profile.js'
+import BannerSliderItem from '../components/banner-slider-item.js'
+import ControlSliderItem from '../components/control-slider-item.js'
+import Collection from '../components/collection.js'
+import MovieCarouselItem from '../components/movie-carousel-item.js'
+import bannerSliderModule from '../modules/banner-slides.js'
+import collectionModule from '../modules/collections.js'
+import headerModule from '../modules/header.js'
 
 
 const Home = (data) => {
